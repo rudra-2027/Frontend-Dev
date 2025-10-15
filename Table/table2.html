@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    thead {
+      background-color: #ff82b8;
+    }
+
+    thead th {
+      text-align: left;
+      color: #a12159;
+      padding: 10px 12px;
+    }
+
+    tbody td {
+      padding: 10px 12px;
+
+    }
+
+    .logo {
+      width: 20px;
+      height: 20px;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/006/877/520/non_2x/work-character-solid-icon-illustration-office-workers-teachers-judges-police-artists-employees-free-vector.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      border: 3px solid #555;
+
+    }
+
+    .company {
+      display: flex;
+      align-items: center;
+    }
+
+    .name {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .desc {
+      display: block;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+    }
+
+    .person {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .role {
+      display: block;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .Approved {
+      color: #3cb371;
+    }
+
+    .Approved .dot {
+      background: #3cb371;
+    }
+
+    .rejected {
+      color: #b31919;
+    }
+
+    .rejected .dot {
+      background: #b31919;
+    }
+
+    .awaited {
+      color: #ffc852;
+    }
+
+    .awaited .dot {
+      background-color: #ffc852;
+    }
+
+    .Billing {
+      display: flex;
+      align-items: center;
+    }
+
+    .price {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .lic {
+      display: block;
+      font-size: 14px;
+      color: #666;
+    }
+
+    tr:hover {
+      cursor: pointer;
+      outline: 3px solid rgb(119, 119, 119);
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <table cellspacing="2">
+    <thead>
+      <th>Company</th>
+      <th>Status</th>
+      <th>Joined</th>
+      <th>Emp. size</th>
+      <th>Location</th>
+      <th>Contact</th>
+      <th>Billing</th>
+      <th>Edit</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo">
+            </div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status rejected">
+            <span class="dot"></span> Rejected
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">No</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status Approved">
+            <span class="dot"></span> Approved
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status awaited">
+            <span class="dot"></span> Awaited
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo">
+            </div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status rejected">
+            <span class="dot"></span> Rejected
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">No</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status Approved">
+            <span class="dot"></span> Approved
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status awaited">
+            <span class="dot"></span> Awaited
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo">
+            </div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status rejected">
+            <span class="dot"></span> Rejected
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">No</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status Approved">
+            <span class="dot"></span> Approved
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status awaited">
+            <span class="dot"></span> Awaited
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo">
+            </div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status rejected">
+            <span class="dot"></span> Rejected
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">No</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status Approved">
+            <span class="dot"></span> Approved
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status awaited">
+            <span class="dot"></span> Awaited
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo">
+            </div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status rejected">
+            <span class="dot"></span> Rejected
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">No</td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status Approved">
+            <span class="dot"></span> Approved
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="company">
+            <div class="logo"></div>
+            <div>
+              <span class="name">Crazyheads</span>
+              <span class="desc">Content placement individually</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="status awaited">
+            <span class="dot"></span> Awaited
+          </div>
+        </td>
+        <td>May '11</td>
+        <td>11–50</td>
+        <td>Sunnyvale</td>
+        <td>
+          <div class="contact">
+            <div class="logo"></div>
+            <div>
+              <span class="person">Angle Swift</span>
+              <span class="role">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="Billing">
+            <div>
+              <span class="price">$20,863</span>
+              <span class="lic">Product Owner</span>
+            </div>
+          </div>
+        </td>
+        <td class="edit">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
