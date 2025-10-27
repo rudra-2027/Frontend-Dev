@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #00334d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #006080;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main section {
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+#intro {
+  background-image: url("https://i.pinimg.com/736x/43/67/11/43671105f7cb607acb5f47ea4e93df32.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+#about {
+  background-image: url("https://hblimg.mmtcdn.com/content/hubble/img/lakshadweep/mmt/destination/m_Lakshadweep_l_580_870.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+
+
+}
+
+#attractions {
+  background-image: url("https://i.pinimg.com/736x/38/3e/58/383e58e43db7eefc4b1e143cf31ed529.jpg");
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+#nature {
+  background-image: url("https://hblimg.mmtcdn.com/content/hubble/img/Lakshadweep/mmt/activities/m_Lakshadweep_6_l_290_387.jpg");
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
