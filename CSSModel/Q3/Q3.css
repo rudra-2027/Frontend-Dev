@@ -1,0 +1,38 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+header, footer {
+  position: fixed;
+  width: 100%;
+  background: #222;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+header { top: 0; }
+footer { bottom: 0; }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.linear {
+  background: linear-gradient(45deg, #ff9800, #e91e63);
+  background-attachment: fixed;
+}
+
+.radial {
+  background: radial-gradient(circle, #3f51b5, #1a237e);
+}

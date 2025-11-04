@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+input[type="text"] {
+  border: 2px solid #3498db;
+  padding: 8px;
+}
+
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input:focus {
+  outline: 2px solid #e67e22;
+}
+
+li:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+h2::before {
+  content: "- ";
+  color: gold;
+}
+
+h2::after {
+  content: " -";
+  color: gold;
+}
+
+.parent > p {
+  color: blue;
+}
+
+.parent p {
+  font-style: italic;
+}
+
+.parent + .next {
+  color: red;
+}
+
+.parent ~ .later {
+  color: purple;
+}
+
+li:hover {
+  background: #ddd;
+  cursor: pointer;
+}
