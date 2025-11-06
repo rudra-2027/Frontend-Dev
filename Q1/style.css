@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.example {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.hover-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #0078ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hover-link:hover {
+  background: #00c6ff;
+}
+
+.focus-input {
+  padding: 8px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  outline: none;
+  background: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.focus-input:focus {
+  border-color: #00ff88;
+  background: #003322;
+}
+
+.active-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #ff5733;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.active-btn:active {
+  background: #ff9966;
+  transform: scale(0.95);
+}
+
+.nth-list {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.nth-list li {
+  padding: 8px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 4px;
+}
+
+.nth-list li:nth-child(odd) {
+  background: #0044cc;
+}
+
+.nth-list li:nth-child(even) {
+  background: #0088ff;
+}
