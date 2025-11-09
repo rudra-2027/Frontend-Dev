@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration Form structure</title>
+</head>
+
+<body>
+
+  <h1>Course Registration Form</h1>
+  <form action="">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Enter Your Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter Your Name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+    </fieldset>
+    <fieldset>
+      <legend>Course Selection</legend>
+      <label for="Course">Select Course:</label>
+      <select name="Course" id="Course">
+        <option value="">Select Course</option>
+        <option value="html">Html Basic</option>
+        <option value="css">CSS Fundamentals</option>
+        <option value="js">JavaScript Essentials</option>
+        <option value="react">React JS</option>
+      </select>
+    </fieldset>
+    <input type="submit" value="Register">
+  </form>
+  <h2>Available course schedules</h2>
+  <table border="1" cellspacing="0" cellpadding="2">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Intstructor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>10:00 AM - 12:00 PM</td>
+        <td>Rohan Sir</td>
+      </tr>
+
+      <tr>
+        <td>Tuesday</td>
+        <td>10:00 AM - 12:00 PM</td>
+        <td>Rahul Sir</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>1:00 PM - 5:00 PM</td>
+        <td>Rahul Sir</td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+
+</html>
