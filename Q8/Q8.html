@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="Q8.css">
+</head>
+<body>
+    <h1>Box-Sizing Comparison</h1>
+    <p class="subtitle">Demonstrating the difference between <code>content-box</code> and <code>border-box</code></p>
+
+    <div class="comparison-container">
+        <div class="box default-box">
+            <h2>Default (content-box)</h2>
+            <p>The total width includes content + padding + border.</p>
+        </div>
+        <div class="box border-box">
+            <h2>Using border-box</h2>
+            <p>The total width remains fixed because padding and border are inside the width.</p>
+        </div>
+    </div>
+</body>
+</html>

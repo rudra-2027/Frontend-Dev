@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 10px;
+    animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveBox {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(150px); }
+}
+
+.ball {
+    width: 70px;
+    height: 70px;
+    background-color: #28a745;
+    border-radius: 50%;
+    animation: bounceBall 2s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes bounceBall {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+}
+
+.color-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #dc3545;
+    animation: colorChange 4s ease-in-out infinite alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #dc3545; }
+    50% { color: #007bff; }
+    100% { color: #28a745; }
+}

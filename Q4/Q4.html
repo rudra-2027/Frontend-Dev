@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="Q4.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+        <p class="subtitle">Understanding element, class, ID, attribute, and combinator selectors</p>
+    </header>
+
+    <main>
+        <section class="selectors-demo">
+            <h2>1. Element Selector</h2>
+            <p>This paragraph is styled using an <strong>element selector</strong> (<code>p { }</code>).</p>
+            <p>Element selectors target all instances of a given HTML tag.</p>
+        </section>
+
+        <section class="selectors-demo">
+            <h2>2. Class Selector</h2>
+            <p class="highlight">This paragraph has the class “highlight” and uses <code>.highlight</code> in CSS.</p>
+            <p class="highlight">Multiple elements can share the same class.</p>
+        </section>
+
+        <section class="selectors-demo">
+            <h2>3. ID Selector</h2>
+            <p id="unique-text">This paragraph has a unique ID and is styled with <code>#unique-text</code>.</p>
+        </section>
+
+        <section class="selectors-demo">
+            <h2>4. Attribute Selector</h2>
+            <a href="#" title="home link">Home Link</a>
+            <a href="#" target="_blank">External Link</a>
+            <p>Links are styled based on their <strong>attributes</strong> using <code>[attribute]</code> selectors.</p>
+        </section>
+
+        <section class="selectors-demo">
+            <h2>5. Combinator Selectors</h2>
+            <div class="combinator">
+                <p>This is a <strong>descendant</strong> selector example (<code>div p</code>).</p>
+                <span>Next element demonstrates the <strong>child selector</strong> (<code>div > p</code>).</span>
+                <p>Another paragraph inside the same div.</p>
+            </div>
+
+            <div class="combinator2">
+                <p>Paragraph 1 (normal)</p>
+                <p>Paragraph 2 (uses <code>+</code> adjacent sibling)</p>
+                <p>Paragraph 3 (uses <code>~</code> general sibling)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CSS Practice Page </p>
+    </footer>
+</body>
+
+</html>
