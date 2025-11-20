@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Delivery Pipeline</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #fff3e0;
+            margin: 0;
+            color: #ff9800;
+        }
+        #app-container {
+            background-color: #fff;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #f57c00;
+            margin-bottom: 25px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #ffb74d;
+            color: #424242;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff9800;
+            color: white;
+        }
+        #logs {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff8e1;
+            border-radius: 8px;
+            text-align: left;
+            min-width: 350px;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .log-step { color: #f57c00; }
+        .log-start { color: #4CAF50; font-weight: bold; }
+        .log-success { color: #2e7d32; font-weight: bold; }
+        .log-failure { color: #d50000; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Food Delivery Pipeline</h1>
+        <div id="logs">Click "Start Delivery" to run the pipeline.</div>
+        <button onclick="runPipeline()">Start Delivery</button>
+    </div>
+    <script src="delivery.js"></script>
+</body>
+</html>

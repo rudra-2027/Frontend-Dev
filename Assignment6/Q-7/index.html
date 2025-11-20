@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise.allSettled Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #e0f7fa;
+            margin: 0;
+            color: #006064;
+        }
+        #app-container {
+            background-color: #fff;
+            padding: 30px 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 17px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0097a7;
+        }
+        #results {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f1f8e9;
+            border-radius: 8px;
+            text-align: left;
+            min-width: 300px;
+        }
+        .success { color: #4CAF50; }
+        .failure { color: #F44336; font-weight: bold; }
+        .time { color: #3F51B5; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Dashboard Loader</h1>
+        <div id="results">Click "Load Dashboard" to start.</div>
+        <button onclick="runAllSettledDemo()">Load Dashboard</button>
+    </div>
+    <script src="loader.js"></script>
+</body>
+</html>

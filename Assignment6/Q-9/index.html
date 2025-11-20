@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop Execution Order</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #fce4ec;
+            margin: 0;
+            color: #4a148c;
+        }
+        #app-container {
+            background-color: #fff;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #880e4f;
+            margin-bottom: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8bbd0;
+            border-radius: 8px;
+            text-align: left;
+            min-width: 350px;
+            font-size: 1.1em;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Event Loop Task Priority</h1>
+        <p>Check the browser's console for the executed order and explanation.</p>
+        <div id="output">Output will appear in the Console...</div>
+    </div>
+    <script src="eventloop.js"></script>
+</body>
+</html>

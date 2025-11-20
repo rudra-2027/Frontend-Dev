@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store - Product Dashboard</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f7f8fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            color: #1565c0;
+        }
+        #product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+            min-height: 350px;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-height: 150px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            font-size: 1em;
+            margin: 10px 0;
+            flex-grow: 1;
+        }
+        .product-card p {
+            font-size: 1.2em;
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 5px 0 0;
+        }
+        #error-message {
+            text-align: center;
+            color: #c62828;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛍️ Fake Store - Product Dashboard</h1>
+    </header>
+    <div id="product-container">
+    </div>
+    <div id="error-message" style="display: none;"></div>
+    <script src="store.js"></script>
+</body>
+</html>

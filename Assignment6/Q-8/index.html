@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Retry Mechanism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #e8f5e9;
+            margin: 0;
+            color: #1b5e20;
+        }
+        #app-container {
+            background-color: #fff;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 25px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #388E3C;
+        }
+        #logs {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f8e9;
+            border-radius: 8px;
+            text-align: left;
+            min-width: 350px;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+        .log-attempt { color: #333; }
+        .log-success { color: #2e7d32; font-weight: bold; }
+        .log-failure { color: #c62828; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Order Processing Retry</h1>
+        <div id="logs">Click "Place Order" to start the process.</div>
+        <button onclick="processOrder()">Place Order</button>
+    </div>
+    <script src="retry.js"></script>
+</body>
+</html>

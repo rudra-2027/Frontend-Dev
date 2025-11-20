@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Hell vs Async/Await</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fafafa;
+            color: #212121;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+        .panel {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            min-height: 400px;
+        }
+        .panel h2 {
+            margin-top: 0;
+            color: #3f51b5;
+        }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        button:hover {
+            background-color: #303f9f;
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        .logs {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #e8eaf6;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .log-item {
+            padding: 4px 0;
+            border-bottom: 1px solid #c5cae9;
+            font-size: 14px;
+        }
+        .log-item:last-child {
+            border-bottom: none;
+        }
+        .header { color: #3f51b5; font-weight: bold; }
+        .success { color: #4caf50; }
+        .final { color: #e91e63; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Asynchronous Pipeline Refactoring</h1>
+
+    <div class="buttons">
+        <button onclick="callbackHell()">Run Callback Hell Demo</button>
+        <button onclick="asyncAwaitFlow()">Run Async/Await Demo</button>
+    </div>
+
+    <div class="container">
+        <div class="panel">
+            <h2>Callback Hell Output</h2>
+            <div id="logs-callback" class="logs"></div>
+        </div>
+        <div class="panel">
+            <h2>Async/Await Output</h2>
+            <div id="logs-async" class="logs"></div>
+        </div>
+    </div>
+    <script src="pipeline.js"></script>
+</body>
+</html>

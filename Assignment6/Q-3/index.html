@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Bug Tracker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #fce4ec;
+            margin: 0;
+            color: #4a148c;
+        }
+        #app-container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #880e4f;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+        #status {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8bbd0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .success { color: #1B5E20; }
+        .failure { color: #D32F2F; }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <h1>Bug Tracker Promise Migration</h1>
+        <div id="status">Click to fetch bugs... (Check Console)</div>
+        <button onclick="runBugTracker()">Fetch Bugs</button>
+    </div>
+    <script src="bugtracker.js"></script>
+</body>
+</html>
