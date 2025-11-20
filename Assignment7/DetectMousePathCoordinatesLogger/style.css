@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+#box {
+  width: 400px;
+  height: 400px;
+  background: #ddd;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #999;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+}
