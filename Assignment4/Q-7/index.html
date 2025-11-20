@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Form Validation</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      margin-top: 12px;
+      font-weight: bold;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border-radius: 6px;
+      border: 2px solid #ccc;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .error {
+      color: red;
+      font-size: 13px;
+      display: none;
+      margin-top: 3px;
+    }
+
+    .success {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e5ffe5;
+      border: 1px solid #62c462;
+      color: #2b7a2b;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+      text-align: center;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Login Form</h1>
+
+  <div class="container">
+
+    <label>Username</label>
+    <input type="text" id="username" />
+    <p class="error" id="userErr">Username must be at least 5 characters.</p>
+
+    <label>Password</label>
+    <input type="password" id="password" />
+    <p class="error" id="passErr">
+      Password must be 8+ chars with uppercase, lowercase, number, and special character.
+    </p>
+
+    <button onclick="validateLogin()">Login</button>
+
+    <div class="success" id="successMsg">Login Successful!</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

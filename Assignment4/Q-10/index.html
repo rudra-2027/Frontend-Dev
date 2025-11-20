@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resume Builder</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #eef0f2;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .container {
+        max-width: 550px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        margin-top: 12px;
+        display: block;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 2px solid #ccc;
+        font-size: 15px;
+      }
+
+      .error {
+        color: red;
+        font-size: 13px;
+        display: none;
+        margin-top: 3px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      .output {
+        margin-top: 20px;
+        padding: 15px;
+        background: #fafafa;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-family: monospace;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Resume Builder</h1>
+
+    <div class="container">
+      <label>Name</label>
+      <input type="text" id="name" />
+
+      <label>Email</label>
+      <input type="text" id="email" />
+      <p class="error" id="emailErr">Enter a valid email.</p>
+
+      <label>Skills (comma separated)</label>
+      <textarea id="skills" rows="3"></textarea>
+
+      <label>GitHub URL</label>
+      <input type="text" id="github" />
+      <p class="error" id="gitErr">URL must start with https://</p>
+
+      <label>LinkedIn URL</label>
+      <input type="text" id="linkedin" />
+      <p class="error" id="linkErr">URL must start with https://</p>
+
+      <button onclick="buildResume()">Create Resume Data</button>
+
+      <h3>Generated Resume Object:</h3>
+      <div class="output" id="outputBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

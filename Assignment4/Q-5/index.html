@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Ticket Booking</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .container {
+        max-width: 450px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        margin-top: 15px;
+        font-weight: bold;
+        display: block;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 2px solid #ccc;
+      }
+
+      .error {
+        font-size: 13px;
+        color: red;
+        margin-top: 3px;
+        display: none;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px;
+        width: 100%;
+        font-size: 16px;
+        border: none;
+        background: #007bff;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0056b3;
+      }
+
+      .ticket {
+        margin-top: 20px;
+        background: #fafafa;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-family: monospace;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Movie Ticket Booking</h1>
+
+    <div class="container">
+      <label>Name</label>
+      <input type="text" id="name" />
+      <p class="error" id="nameErr">Name must contain alphabet letters only.</p>
+
+      <label>Email</label>
+      <input type="text" id="email" />
+      <p class="error" id="emailErr">Enter a valid email.</p>
+
+      <label>Seats</label>
+      <input type="number" id="seats" />
+      <p class="error" id="seatErr">Seats must be between 1 and 10.</p>
+
+      <button onclick="bookTicket()">Book Ticket</button>
+
+      <h3>Ticket Details:</h3>
+      <div class="ticket" id="ticketBox"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
