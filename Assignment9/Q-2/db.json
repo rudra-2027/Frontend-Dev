@@ -1,0 +1,24 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Rudra Gupta",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "HariOm Tiwari",
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "name": "Anshitva Mishra",
+      "status": "inactive"
+    },
+    {
+      "id": "4",
+      "name": "Sarthak Saghal",
+      "status": "inactive"
+    }
+  ]
+}
